@@ -10,6 +10,17 @@ export default defineConfig({
     title: 'ElysiaJS',
     // description,
     lastUpdated: true,
+    locales: {
+        '/': {
+            label: 'English',
+            lang: 'en-US'
+        },
+        '/pt/': {
+            label: 'Português',
+            lang: 'pt-BR',
+            link: '/pt/guide'
+        }
+    },
     markdown: {
         theme: {
             light: 'github-light',
@@ -91,7 +102,14 @@ export default defineConfig({
             {
                 text: 'Blog',
                 link: '/blog'
-            }
+            },
+            {
+                text: 'Languages',
+                items: [
+                  { text: 'English', link: '/' },
+                  { text: 'Português', link: '/pt/' }
+                ]
+              }
         ],
         sidebar: [
             {
